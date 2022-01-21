@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>password gate</title>
+</head>
+<body>
+<form>
+    <label for="pswd">what's my favorite phoebe bridgers song? </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="index.html";
+        }
+        else{
+            alert("access denid :(");
+        }
+    }
+</script>
+</body>
+</html>
